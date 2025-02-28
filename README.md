@@ -1,97 +1,117 @@
 # C++ Modules (00-04)
 
-## Introduction
+## 🎓 Project Overview
 
-This repository contains five C++ modules from the 42 curriculum, designed to introduce Object-Oriented Programming concepts through progressive exercises. Each module builds upon the knowledge of previous ones, gradually introducing more complex OOP principles.
+This repository contains five foundational C++ modules from the 42 School curriculum, designed to provide a comprehensive introduction to Object-Oriented Programming. Each module builds progressively on the previous ones, guiding you through the transition from procedural C programming to object-oriented C++ development.
 
-These modules comply with the C++98 standard and focus on foundational programming concepts rather than modern C++ features.
+All modules adhere to the C++98 standard, focusing on core language concepts rather than modern features. This approach ensures a solid understanding of OOP fundamentals that remain relevant regardless of the C++ version used.
 
-## Module Overview
+## 📚 Module Contents
 
-### [Module 00: Namespace, class, member functions, stdio streams, initialization lists, static, const](./cpp00)
+### [Module 00: Namespace, Classes & Basic C++](./cpp00)
 
-An introduction to the basic concepts of C++, making the transition from C to C++.
+An introduction to the fundamental building blocks of C++ and object-oriented design.
 
-**Key concepts:**
-- Classes and instances
-- Member functions
-- Visibility (public/private)
-- Basic I/O with iostream
-- Initialization lists
-- Static class members
-- Const qualifier
+**Key Concepts:**
+- **Classes and Objects**: Creating your own data types with methods
+- **Access Control**: Public and private members
+- **I/O Streams**: Using `iostream` for input and output
+- **Initialization Lists**: Efficient object initialization
+- **Static Members**: Class-wide data and functions
+- **Constant Objects**: Immutability in C++
 
-### [Module 01: Memory allocation, pointers to members, references, switch statement](./cpp01)
+### [Module 01: Memory Allocation & References](./cpp01)
 
-Deepening C++ knowledge with memory management and references.
+Diving deeper into C++ memory management and reference semantics.
 
-**Key concepts:**
-- Memory allocation (stack vs. heap)
-- Pointers and references
-- Creating and manipulating objects
-- Switch statements
-- Member function pointers
-- Class scope
+**Key Concepts:**
+- **Memory Models**: Stack vs heap allocation
+- **Pointers vs References**: When and how to use each
+- **Dynamic Memory**: Working with `new` and `delete`
+- **Object Lifecycle**: Construction, usage, destruction
+- **Member Function Pointers**: Advanced function callbacks
+- **Scope Management**: Understanding variable lifetimes
 
-### [Module 02: Ad-hoc polymorphism, operator overloading and Orthodox Canonical class form](./cpp02)
+### [Module 02: Operator Overloading & Canonical Form](./cpp02)
 
-Learning operator overloading and canonical form class design.
+Customizing operator behavior and establishing best practices for class design.
 
-**Key concepts:**
-- Orthodox Canonical Form
-- Operator overloading
-- Fixed-point numbers
-- Copy constructors
-- Assignment operators
-- Binary Space Partitioning
+**Key Concepts:**
+- **Orthodox Canonical Form**: The four essential class functions
+- **Operator Overloading**: Creating intuitive interfaces
+- **Fixed-Point Numbers**: Implementation and representation
+- **Copy Semantics**: Deep vs shallow copying
+- **Conversion Operators**: Type conversion control
+- **Function Overloading**: Same name, different parameters
 
-### [Module 03: Inheritance](./cpp03)
+### [Module 03: Inheritance & Class Hierarchies](./cpp03)
 
-Introduction to inheritance and the creation of class hierarchies.
+Building relationships between classes to model complex systems.
 
-**Key concepts:**
-- Class inheritance
-- Access specifiers
-- Method overriding
-- Constructor/destructor behavior in inheritance
-- Multiple inheritance
-- The diamond problem
+**Key Concepts:**
+- **Class Inheritance**: Extending functionality
+- **Access Control**: Public, protected, and private inheritance
+- **Method Overriding**: Customizing inherited behavior
+- **Constructor Chaining**: Parent-child initialization
+- **Multiple Inheritance**: Combining multiple parent classes
+- **Inheritance Pitfalls**: Avoiding common problems
 
-### [Module 04: Subtype polymorphism, abstract classes, interfaces](./cpp04)
+### [Module 04: Polymorphism & Abstractions](./cpp04)
 
-Advanced OOP concepts including polymorphism and abstraction.
+Implementing advanced OOP techniques for flexible code architecture.
 
-**Key concepts:**
-- Polymorphism
-- Virtual functions
-- Abstract classes
-- Pure virtual functions
-- Interfaces
-- Deep copying in polymorphic classes
+**Key Concepts:**
+- **Runtime Polymorphism**: Interface-based programming
+- **Virtual Functions**: Dynamic method dispatch
+- **Abstract Classes**: Partial and complete abstraction
+- **Pure Virtual Functions**: Creating interfaces
+- **Virtual Destructors**: Proper cleanup in inheritance chains
+- **Type Introspection**: Identifying object types at runtime
 
-## Compilation and Usage
+## 🛠️ Technical Implementation
 
-Each module contains multiple exercises, each with its own Makefile. To compile an exercise:
+### Class Design Principles
+
+All exercises follow these fundamental principles:
+- **Orthodox Canonical Form**: Including default constructor, copy constructor, assignment operator, and destructor
+- **Memory Management**: Proper allocation and deallocation to prevent leaks
+- **Encapsulation**: Clear boundaries between interface and implementation
+
+### Compilation and Usage
+
+Each module contains multiple exercises with their own Makefiles:
 
 ```bash
+# Navigate to the exercise directory
 cd cpp_module_XX/exYY
+
+# Compile the exercise
 make
+
+# Run the executable
+./executable_name
 ```
 
-This will create an executable that you can run to test the functionality.
+## 📝 Learning Outcomes
 
-## Requirements
+Through these modules, I gained practical knowledge in:
 
-- C++ compiler with C++98 support (g++, clang++)
-- Make
+- **Object-Oriented Design**: Modeling real-world entities as classes
+- **Memory Management**: Understanding and controlling object lifecycle
+- **Code Organization**: Structuring programs for maintainability
+- **Inheritance Hierarchies**: Building flexible class relationships
+- **Abstraction Techniques**: Creating adaptable interfaces
+- **C++ Language Features**: Working with the core building blocks of C++
 
-## Resources
+## ⚠️ Note
 
-Each module directory contains detailed explanations of the concepts covered and the specific requirements for each exercise. Refer to the individual READMEs within each module for more information.
+- All code strictly complies with the C++98 standard
+- External libraries are not used beyond the C++ standard library
+- Memory management is handled manually without smart pointers
+- Exercises focus on educational concepts rather than production-ready code
 
-## Notes
+For detailed information about each module, refer to the individual READMEs within each module directory.
 
-- All code complies with the C++98 standard
-- No external libraries are used beyond the C++ standard library
-- Classes follow the Orthodox Canonical Form unless specified otherwise
-- Memory management is handled manually (no smart pointers)
+---
+
+*These projects are part of the 42 School Common Core curriculum.*

@@ -67,7 +67,7 @@ You are not coding in C anymore. Time to C++! Therefore:
 >[!tip]
 >You will have to implement a lot of classes. This can seem tedious, unless you’re able to script your favorite text editor.
 
->[!info]
+>[!note]
 >You are given a certain amount of freedom to complete the exercises. However, follow the mandatory rules and don’t be lazy. You would miss a lot of useful information! Do not hesitate to read about theoretical concepts.
 
 ## 3. New rules
